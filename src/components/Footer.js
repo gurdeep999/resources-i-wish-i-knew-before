@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="footer">made with love by Gurdeep</div>
+    <div className="container__footer"><div>Made with ❤️ by <a href="https://gurdeepsingh.netlify.app/">gurdeepsingh</a></div></div>
   )
 }
 

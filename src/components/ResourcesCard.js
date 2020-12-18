@@ -13,12 +13,10 @@ const ResourceCard = ({ resource }) => {
           <li className="resources__item-tags__item" key={i}>{t}</li>
         )
       )}</ul>
-
-      <div className="resources__item-link">
-        <a className="resources__item-link__item" href={resource.link}>Go to Site</a>
-        </div>
+      <a className="resources__item-link__item" href={resource.link} rel="noreferrer" target="_blank"><button className="arrow-button">Go to Site<span className="arrow"></span>
+</button></a>
         <div className="seperator"></div>
-    </div>
+    </div >
   )
 }
 
