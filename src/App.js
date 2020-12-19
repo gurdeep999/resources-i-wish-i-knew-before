@@ -13,9 +13,7 @@ const App = () => {
     if (localResources) {
       return JSON.parse(localResources)
     } else {
-      let response = await fetch(
-        "https://radiant-precept-290311-default-rtdb.firebaseio.com/temp/api/resources.json"
-      )
+      let response = await fetch("/.netlify/functions/getResources")
       let data = await response.json()
       window.localStorage.setItem("MyResources", JSON.stringify(data))
       return data
