@@ -6,7 +6,3 @@ Lists all the relevant web dev resources i have gone through.
 - [ ] can add resources
 - [ ] can search resources
 - [ ] can edit resources
-- [ ] design change
-- [ ] user login/signup
-- [ ] lets users add their own resources
-- [ ] public/private resources
