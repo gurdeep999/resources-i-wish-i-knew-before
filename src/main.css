@@ -272,3 +272,7 @@ body {
   background-color: #017A4F;
   color: #fff;
 }
+
+.resources__item-rating {
+  line-height: 2rem;
+}
