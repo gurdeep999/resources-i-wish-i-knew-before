@@ -5,8 +5,7 @@ import Tab from "./components/Tab"
 
 const App = () => {
   const [resources, setResources] = useState([])
-  const [activeTab, setTab] = useState("All")
-  console.log(activeTab)
+  const [activeTab, setTab] = useState("ALL")
 
   const fetchResources = async () => {
     let localResources = window.localStorage.getItem("MyResources")
@@ -24,9 +23,9 @@ const App = () => {
     fetchResources().then((data) => {
       setResources(data)
     })
+    document.querySelectorAll('.tab-item')[0].classList.add('tab-item--active')
   }, [])
 
-  console.log(resources)
   return (
     <div className="main">
       <nav className="header">

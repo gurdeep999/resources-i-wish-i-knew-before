@@ -102,14 +102,15 @@ body {
   cursor: pointer;
   text-transform: uppercase;
   outline: 0;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 .tab-item:hover {
   background-color: #bebebe;
 }
 
-.tab-item--active {
+.tab-item--active,
+.tab-item:active {
   background-color: black;
   color: white;
 }
@@ -123,8 +124,14 @@ body {
   background-color:var(--resource-background-color);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  
+  animation: fadeEffect 1s;
 }
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 
 .resources__item {
   display: flex;
@@ -132,6 +139,7 @@ body {
   width: 100%;
   padding: 1rem 2rem;
   position: relative;
+  
 }
 
 .resources__item-title {

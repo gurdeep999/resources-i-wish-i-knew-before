@@ -10,10 +10,10 @@ const Resources = ({ resources, activeTab }) => {
   }, [resources])
 
   return (
-    <div className="resources">
+    <div key={activeTab} className="resources">
       {
         shuffledResources.filter(r => {
-          if (activeTab === 'All') {
+          if (activeTab === 'ALL') {
             return true
           }
           return r.tag.some(t =>
